@@ -1,0 +1,82 @@
+header {
+    padding: 40px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      
+}
+
+#top {
+    border-bottom-width: 1px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-style: solid;
+    background-color: #fff;
+}
+
+html {
+    background-image: linear-gradient(rgb(0, 110, 255),rgb(69, 192, 230));
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+.text_boxes {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.box {
+
+    flex: 0 0 300px;
+    border-style: solid;
+    margin: 40px;
+    border-radius: 20px;
+    background-image: linear-gradient(rgba(255, 217, 0, 0.842), rgb(238, 155, 0));
+    transition: all 0.5s ease-in-out;
+}
+
+.box:hover {
+    box-shadow:inset 0px 0px 25px rgba(255, 217, 0, 0.842), 0 0 25px rgb(238, 155, 0);
+
+}
+
+.box > header {
+    font-size: 30px;
+    font-family: lucida console;
+}
+
+.box > p {
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-family: lucida console;
+}
+
+.box > img {
+    border-radius: 20px;
+    width: 80%;
+    margin: 10%;
+}
+
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+    .box {
+
+        flex: 0 0 100px;
+        border-style: solid;
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        border-radius: 20px;
+
+  }
+}
+  
